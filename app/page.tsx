@@ -16,12 +16,12 @@ type Product = {
 type CartLine = Product & { quantity: number };
 
 const products: Product[] = [
-  { id: 1, name: "RIFT", edition: "Street Core · 18 cm", price: 42, color: "Cobalt", image: "/products/rift.png", badge: "NEW DROP", category: "Street Core" },
-  { id: 2, name: "BUBBLES", edition: "Sidewalk Pop · 16 cm", price: 38, color: "Teal", image: "/products/bubbles.png", badge: "BESTSELLER", category: "New Drops" },
-  { id: 3, name: "K.O. KID", edition: "After Dark · 20 cm", price: 49, color: "Volt", image: "/products/rift.png", badge: "12 LEFT", category: "New Drops" },
-  { id: 4, name: "BYTE BUNNY", edition: "Block Party · 15 cm", price: 36, color: "Bubblegum", image: "/products/bubbles.png", category: "Minis" },
-  { id: 5, name: "NOISE", edition: "Concrete Wave · 19 cm", price: 46, color: "Orange", image: "/products/rift.png", category: "Street Core" },
-  { id: 6, name: "MISO", edition: "Mini Mischief · 13 cm", price: 31, color: "Mint", image: "/products/bubbles.png", category: "Minis" },
+  { id: 1, name: "RIFT", edition: "Street Core · 18 cm", price: 42, color: "Cobalt", image: "/products/rift.webp", badge: "NEW DROP", category: "Street Core" },
+  { id: 2, name: "BUBBLES", edition: "Sidewalk Pop · 16 cm", price: 38, color: "Teal", image: "/products/bubbles.webp", badge: "BESTSELLER", category: "New Drops" },
+  { id: 3, name: "K.O. KID", edition: "After Dark · 20 cm", price: 49, color: "Volt", image: "/products/rift.webp", badge: "12 LEFT", category: "New Drops" },
+  { id: 4, name: "BYTE BUNNY", edition: "Block Party · 15 cm", price: 36, color: "Bubblegum", image: "/products/bubbles.webp", category: "Minis" },
+  { id: 5, name: "NOISE", edition: "Concrete Wave · 19 cm", price: 46, color: "Orange", image: "/products/rift.webp", category: "Street Core" },
+  { id: 6, name: "MISO", edition: "Mini Mischief · 13 cm", price: 31, color: "Mint", image: "/products/bubbles.webp", category: "Minis" },
 ];
 
 const money = (value: number) => `$${value.toFixed(2)}`;
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
         <div className="hero-stage" id="drop">
           <div className="burst">NEW<br/>DROP!</div>
-          <img src="/products/hero-crew.png" alt="A crew of colorful original 3Dhive street figurines" />
+          <img src="/products/hero-crew.webp" alt="A crew of colorful original 3Dhive street figurines" />
           <div className="price-tag"><small>DROP 07</small><strong>FROM $31</strong><span>LIMITED RUN</span></div>
           <div className="scribble">YOUR SHELF<br/>NEEDS THIS! ↗</div>
         </div>
@@ -145,7 +145,7 @@ export default function Home() {
       </section>
 
       <section className="custom-section" id="custom">
-        <div className="custom-art" aria-hidden="true"><div className="speech">YOU DREAM IT.<br/><b>WE PRINT IT!</b></div><img src="/products/bubbles.png" alt="" /><span className="comic-spark">ZAP!</span></div>
+        <div className="custom-art" aria-hidden="true"><div className="speech">YOU DREAM IT.<br/><b>WE PRINT IT!</b></div><img src="/products/bubbles.webp" alt="" /><span className="comic-spark">ZAP!</span></div>
         <div className="custom-copy"><p className="eyebrow">YOUR IDEA, OFF THE SCREEN</p><h2>BUILD A FIGURE<br/><span>THAT IS 100% YOU.</span></h2><p>Send us a sketch, a character sheet, or just the idea in your head. Our artists turn it into a shelf-ready original—then we print, hand-finish, and ship it.</p><ol><li><b>01</b> Share your idea</li><li><b>02</b> Approve the 3D preview</li><li><b>03</b> Unbox your one-of-one</li></ol><a className="button primary" href="mailto:hello@3dhive.shop?subject=Custom figurine idea">START A CUSTOM FIGURE <span>→</span></a></div>
       </section>
 
